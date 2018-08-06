@@ -1,3 +1,5 @@
+require 'ruby'
+
 class Car
   FEATURES = %w(engine wheel airbag alarm stereo)
   FEATURES.each do |feature|
