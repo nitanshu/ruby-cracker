@@ -7,3 +7,4 @@ class MethodChaining
     p 'below hi'
   end
 end
+MethodChaining.hi

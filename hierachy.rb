@@ -15,3 +15,7 @@ class A
     p 'a down'
   end
 end
+
+a=A.new
+a.b
+A.a

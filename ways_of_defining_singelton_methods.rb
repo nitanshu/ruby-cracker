@@ -10,7 +10,7 @@ class SingletonExample
     p 'singleton_method2'
   end
 
-  def singletonExample.singleton_method3
+  def SingletonExample.singleton_method3
     p 'singleton_method3'
   end
 end
@@ -24,7 +24,7 @@ class Watersport
 end
 Watersport.singleton_methods # => [:surf]
 
-s= singletonExample.new
+s= SingletonExample.new
 
 def s.singleton_method4
   p 'singleton_method4'

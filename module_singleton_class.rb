@@ -9,3 +9,4 @@ end
 class Town
   extend Ghost
 end
+Town.bye

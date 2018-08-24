@@ -7,7 +7,7 @@ end
 a = B.new
 def a.uno() end
 class << a
-  include Mod
+  extend Mod
   def dos()
   end
 end

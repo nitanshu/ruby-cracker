@@ -10,3 +10,5 @@ class InstanceClassEval
     end
   end
 end
+InstanceClassEval.instance_test
+InstanceClassEval.new.class_test

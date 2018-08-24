@@ -20,3 +20,4 @@ class Battle
     include MordenWarFare
   end
 end
+Battle.battle
