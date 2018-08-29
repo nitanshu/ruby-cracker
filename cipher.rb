@@ -1,27 +1,17 @@
-s= gets
-s= s.chomp
-position_to_move =gets
-position_to_move= position_to_move.to_i
-c= s.chars
-c.each{|text| text.replace(move(text, position_to_move))}
-
-
-def move(text, position_to_move)
-  cipher_capital_text_range = ('A'..'Z').to_a
-  cipher_small_text_range = ('a'..'z').to_a
-  cipher_number_range = (0..9)
-  case text
-    when cipher_capital_text_range.include?(text)
-      index = cipher_capital_text_range.index(text) + position_to_move
-      cipher_capital_text_range.at(index)
-    when cipher_small_text_range.include?(text)
-      index = cipher_small_text_range.index(text) + position_to_move
-      cipher_small_text_range.at(index)
-    when cipher_number_range.include?(text)
-      index = cipher_number_range.index(text) + position_to_move
-      cipher_number_range.at(index)
-    else
-      text
+s= gets.chomp
+position_to_move =gets.to_i
+c= s.bytes
+a=[]
+c.each do |byte|
+  bits_to_move = byte+position_to_move
+  if (48..57).include?(byte)
+    a << (bits_to_move > 57 ? (47 + bits_to_move-57).chr : bits_to_move.chr)
+  elsif (65..90).include?(byte)
+    a << (bits_to_move > 90 ? (64 + bits_to_move -90).chr : bits_to_move.chr)
+  elsif (97..122).include?(byte)
+    a << (bits_to_move > 122 ? (96 + bits_to_move- 122).chr : bits_to_move.chr)
+  else
+    a << byte.chr
   end
-
 end
+puts a.join('')

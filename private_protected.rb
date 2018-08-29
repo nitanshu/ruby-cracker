@@ -21,6 +21,11 @@ class AccessorExample
     puts 'its protected'
   end
 end
+class ChildAccessorExample < AccessorExample
+  def calling_parent_private_method
+    its_private
+  end
+end
 
 a = AccessorExample.new
 a.its_public
@@ -32,3 +37,4 @@ a.calling_protected
 a.calling_private
 a.send(:calling_protected)
 a.send(:calling_private)
+ChildAccessorExample.new.calling_parent_private_method
