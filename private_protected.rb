@@ -11,19 +11,51 @@ class AccessorExample
     self.its_private
   end
 
+  class << self
+
+    private
+    def singleton_private_method
+      puts 'singleton private method'
+    end
+
+    def self.class_singleton_private_method
+      puts 'class singleton private method'
+    end
+
+    protected
+    def singleton_protected_method
+      puts 'singleton protected method'
+    end
+
+    def self.class_singleton_protected_method
+      puts 'class singleton protected method'
+    end
+  end
+
   private
   def its_private
     puts 'its private'
+  end
+
+  def self.its_private_class_method
+    puts 'its private class method'
   end
 
   protected
   def its_protected
     puts 'its protected'
   end
+
+  def self.its_class_protected_method
+    puts 'its class protected method'
+  end
 end
 class ChildAccessorExample < AccessorExample
   def calling_parent_private_method
     its_private
+    its_protected
+    calling_protected
+    # calling_private #will not execute
   end
 end
 
