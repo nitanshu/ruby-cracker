@@ -18,3 +18,4 @@ class A
     end
   end
 end
+

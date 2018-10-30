@@ -1,6 +1,6 @@
 module Foo
   def self.module_level_method
-    puts "Module level method"
+    puts 'Module level method'
   end
   def test
     p 'hell'

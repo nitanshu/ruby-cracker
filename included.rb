@@ -7,7 +7,10 @@ module M
       end
     end
   end
+  def self.extended(base)
+    p "base extended is #{base}"
 
+  end
 end
 
 class A
