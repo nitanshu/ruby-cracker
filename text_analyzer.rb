@@ -1,0 +1,1 @@
+f=File.open('text_text')

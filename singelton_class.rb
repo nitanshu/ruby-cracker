@@ -1,11 +1,17 @@
-class A
-  def hello
-    p "hello from the instance method"
+class Nit
+def met
+puts "met from nit"
+end
+end
+n=Nit.new
+ class << n
+   def n.test_n
+     puts "test n"
+   end
+   def test_a
+    puts "test 1"
+    end
+  def test_b
+     puts "test b"
+    end
   end
-end
-a= A.new
-def a.hello2
-  p "hello 2 from the singelton method"
-end
-a.hello2
-

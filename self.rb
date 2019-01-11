@@ -1,11 +1,9 @@
 class A
-  class << self
-    puts "Inspect the singelton class #{self.inspect}"
-  end
-
-  def self.method
-    p 'calling class method #{self.inspect}'
-  end
-
+puts "this is main self===#{self}"
+def meth
+puts "this is method self ====#{self}"
 end
-
+def self.me
+puts "this is class method====#{self}"
+end
+end

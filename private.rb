@@ -1,14 +1,17 @@
-class Surfer
-  def speak
-    "My hair is #{self.hair}"
+class A
+  def main_method
+    method1
   end
 
   private
-
-  def hair
-    'golden'
+  def method1
+    puts "hello from #{self.class}"
   end
 end
 
-dude = Surfer.new
-p dude.speak
+class B < A
+  def main_method
+    method1
+  end
+end
+
