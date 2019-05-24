@@ -1,3 +1,4 @@
+
 #1 ================ With AS::Concern you can write your module the better way ===================
 module M
   def self.included(base)
