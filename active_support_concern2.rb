@@ -1,3 +1,4 @@
+
 require 'active_support/concern'
 module Mode
   module Base
