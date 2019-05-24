@@ -1,5 +1,6 @@
 class B<A
-  
+ 
+ 
 def call_method_in_b
 b_public_method
 b_private_method
