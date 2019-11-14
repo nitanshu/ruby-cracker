@@ -70,3 +70,4 @@ a.calling_private
 a.send(:calling_protected)
 a.send(:calling_private)
 ChildAccessorExample.new.calling_parent_private_method
+AccessorExample.singleton_private_method
