@@ -15,3 +15,4 @@
     puts "*"*(10-d)
   end
 end
+# O(n)
