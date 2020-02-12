@@ -10,5 +10,5 @@ my_object = Greeting.new("Hello")
 #Intorspection
 
 my_object.class
-my_object.class.instance_methods(false)
-my_object.instance_variables
+my_object.class.instance_methods(false) #[:welcome]
+my_object.instance_variables #[@text]

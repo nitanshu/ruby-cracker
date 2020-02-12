@@ -5,7 +5,8 @@ module MyModule
   end
 end
 
-
+MyModule::MyConstant # Outer constant
+MyModule::MyClass::MyConstant # Inner Constant
 
 
 

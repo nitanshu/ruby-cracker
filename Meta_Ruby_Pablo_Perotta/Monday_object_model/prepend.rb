@@ -1,3 +1,7 @@
+module M2
+
+end
+
 class C2
   prepend M2
 end

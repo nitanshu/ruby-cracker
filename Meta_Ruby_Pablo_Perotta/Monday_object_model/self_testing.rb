@@ -9,4 +9,5 @@ class MyClass
   end
 end
 obj = MyClass.new
+obj.my_method
 obj.testing_self # => #<MyClass:0x007f93ab08a728 @var=11>
