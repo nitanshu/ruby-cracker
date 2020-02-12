@@ -1,6 +1,7 @@
 class Lawyer
-  def method_missing(method, *args)
+  def method_missing(method, *args, &blk)
     puts "You called: #{method}(#{args.join(', ')})"
+    puts "________________#{blk}_________________--"
     puts "(You also passed it a block)" if block_given?
   end
 end

@@ -13,3 +13,12 @@ def refresh(options={})
   end
   true
 end
+
+class Dread
+attributes = [ :input, :output, :commands, :print, :quiet,
+               :exception_handler, :hooks, :custom_completions,
+               :prompt, :memory_size, :extra_sticky_locals ]
+  attributes.each do |attr|
+    p attr.send(:to_s)
+  end
+end

@@ -11,3 +11,9 @@ class Module
     end
   end
 end
+
+module Selection1
+  def self.const_missing(const_name)
+    return "The missing constant is #{const_name}"
+  end
+end

@@ -5,5 +5,6 @@ class MyClass
   end
 end
 obj = MyClass.new
+obj.my_method 3 # 6
 obj.method(:my_method).call(3) # => 6
 obj.send(:my_method, 6) # => 12

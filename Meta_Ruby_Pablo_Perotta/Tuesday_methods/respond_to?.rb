@@ -13,3 +13,14 @@ class Computer
     result
   end
 end
+
+class Treasure
+  def method_missing(name, *arg, &blk)
+    super unless name.to_s.respond_to?(:+)
+    "You called this method #{name}"
+  end
+
+  def respond_to_missing?(method, include_private = false)
+    "you have responed to this method #{method}"
+  end
+end

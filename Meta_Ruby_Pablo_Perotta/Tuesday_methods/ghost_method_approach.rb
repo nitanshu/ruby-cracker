@@ -12,3 +12,15 @@ class Computer < BasicObject
     result
   end
 end
+
+class Avengers
+  def initialize(name, intentions)
+    @name = name
+    @intentions = intentions
+  end
+
+  def method_missing(name, *args)
+    super if @intentions  == 'cruel'
+    @avenger = name
+  end
+end
