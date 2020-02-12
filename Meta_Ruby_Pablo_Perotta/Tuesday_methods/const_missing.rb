@@ -17,3 +17,9 @@ module Selection1
     return "The missing constant is #{const_name}"
   end
 end
+
+class ConstTerra
+  def self.const_missing(const_name)
+    p "Sorry, you don't have #{const_name} constant"
+  end
+end
