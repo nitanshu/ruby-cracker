@@ -9,3 +9,5 @@ def double(callable_objects)
 end
 p = proc {return 10}
 double(p) #LocalJumpError
+
+

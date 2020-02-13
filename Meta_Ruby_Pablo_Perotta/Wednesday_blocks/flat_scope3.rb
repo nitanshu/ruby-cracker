@@ -6,4 +6,9 @@ p my_var
     p my_var
 # ..and here
   end
+ end
+
+another_var = "moduel level"
+MyMod = Module.new do
+  p another_var
 end

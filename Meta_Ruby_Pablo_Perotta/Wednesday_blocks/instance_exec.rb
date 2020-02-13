@@ -18,3 +18,5 @@ class D
   end
 end
 D.new.twisted_method # => "@x: 1, @y: 2"
+
+#instance_exec that allows you to pass arguments to the block

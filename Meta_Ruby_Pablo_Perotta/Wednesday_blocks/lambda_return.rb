@@ -13,3 +13,4 @@ def double_trouble
   result = l.call
   result*2 #=> 20
 end
+

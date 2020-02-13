@@ -12,3 +12,14 @@ class MyClass
   @@v = 2
 end
 @@v  # => 2
+
+class ClassVariableExample
+  @@terra =1
+  def initialize
+    @@terra = @@terra+1
+  end
+
+  def check_count
+    @@terra
+  end
+end

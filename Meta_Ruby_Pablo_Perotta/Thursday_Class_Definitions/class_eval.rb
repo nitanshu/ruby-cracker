@@ -6,3 +6,19 @@ def a_method(a_class)
     end
   end
 end
+
+class A
+
+end
+
+A.instance_eval do
+  def _class_method_
+    'a'
+  end
+end
+
+A.class_eval do
+  def _instance_method_
+    'b'
+  end
+end
