@@ -9,12 +9,8 @@ class A
 end
 abc = A.new.method
 p eval("x", abc)
+p eval("@x", abc)
 binding.local_variables
 
-class B
-  def binding_test
-    @user = 1
 
-  end
-end
 
