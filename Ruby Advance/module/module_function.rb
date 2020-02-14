@@ -2,6 +2,9 @@ module Bob
   def job
     "gettin' loaded"
   end
+  def self.done
+    'job done'
+  end
   module_function :job
 end
 

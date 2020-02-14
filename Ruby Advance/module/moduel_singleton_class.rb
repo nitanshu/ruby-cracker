@@ -21,3 +21,5 @@ class Battle
   end
 end
 Battle.battle
+Battle.natasha
+
