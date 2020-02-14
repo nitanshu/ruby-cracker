@@ -8,4 +8,14 @@ while i <= a.length/2 do
 end
 
 
+a=[1,2,3,4,5,6,7,8]
 
+i = 0
+j = a.length
+while i < j-1 do
+  tmp = a[i]
+  a[i] = a[j-1]
+  a[j] = tmp
+  i+=1
+  j-=1
+end

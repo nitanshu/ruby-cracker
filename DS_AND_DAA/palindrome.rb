@@ -8,3 +8,16 @@ while j <= c.length/2 do
   j+=1
 end
 puts c.join('') == s ? 'YES': 'NO'
+
+
+a="abcba".chars
+i=0
+j= a.length-1
+while i < j do
+  unless a[i] == a[j]
+    puts 'Not a palindorme'
+    break
+  end
+  i+=1
+  j-=1
+end

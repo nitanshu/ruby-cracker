@@ -51,3 +51,14 @@ def find_difference_index(arr)
 end
 
 
+a= "lunda".chars
+i = 0
+j = a.length- 1
+while i < a.length/2 do
+  tmp = a[i]
+  a[i]= a[j]
+  a[j]= tmp
+  i+=1
+  j-=1
+end
+
