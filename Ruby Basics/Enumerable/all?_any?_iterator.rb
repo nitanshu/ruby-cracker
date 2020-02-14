@@ -1,3 +1,4 @@
+#all? and any? are boolean enumerable
 #Return true if any of the elements in the soap_opera array start with the letter "a" and false otherwise.
 soap_opera = ["all", "my", "children"]
 soap_opera.any? do |word|

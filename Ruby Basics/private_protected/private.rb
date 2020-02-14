@@ -9,7 +9,7 @@ class A
   end
 end
 
-class B < A
+class PrivateProtectedExtended < A
   def main_method
     method1
   end

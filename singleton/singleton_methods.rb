@@ -1,16 +1,16 @@
 module Mod
   def tres() end
 end
-class B
-  def B.cuatro() end
+class PrivateProtectedExtended
+  def PrivateProtectedExtended.cuatro() end
 end
-a = B.new
+a = PrivateProtectedExtended.new
 def a.uno() end
 class << a
   extend Mod
   def dos()
   end
 end
-B.singleton_methods         #=> ?
+PrivateProtectedExtended.singleton_methods         #=> ?
 a.singleton_methods(false)  #=> ?
 a.singleton_methods #=> ?

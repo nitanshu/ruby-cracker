@@ -8,7 +8,7 @@ module M
 end
 class A
   extend M
-  def c
+  def b
     p 'a up'
   end
   def b

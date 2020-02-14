@@ -1,4 +1,4 @@
-class B<A
+class PrivateProtectedExtended <A
  
 def call_method_in_b
 b_public_method
