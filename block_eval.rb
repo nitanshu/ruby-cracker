@@ -4,6 +4,7 @@ class Evaluate
   end
 end
 
+
 module Dummy::Firebase
   class FirebaseConfig
     class_attribute :firebase_config
