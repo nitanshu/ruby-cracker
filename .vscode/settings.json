@@ -1,0 +1,10 @@
+{
+    "solargraph.autoformat": true,
+    "solargraph.transport": "stdio",
+    "solargraph.formatting": true,
+    "solargraph.useBundler": true,
+    "solargraph.diagnostics": true,
+    "solargraph.bundlerPath": "/Users/nkverma/.rbenv/shims/bundle",
+    "solargraph.commandPath": "/Users/nkverma/.rbenv/shims/solargraph",
+    "solargraph.checkGemVersion": false
+}
