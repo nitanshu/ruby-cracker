@@ -1,4 +1,4 @@
-class MyClass
+class  @
   @s=2
   def my_method
     @v = 1
