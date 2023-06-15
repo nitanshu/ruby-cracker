@@ -8,13 +8,18 @@ class Module
       Rake.application.const_warning(const_name)
       Rake::FileTask
     when :FileCreationTask
+      Rake.application.const_warning(const_name)
+      Rake::FileTask
+    else
+      super
     end
   end
 end
 
-module Selection1
+module Selection
   def self.const_missing(const_name)
-    return "The missing constant is #{const_name}"
+    p const_name
+    const_name == :One ? "The missing constant is #{const_name}" : super
   end
 end
 

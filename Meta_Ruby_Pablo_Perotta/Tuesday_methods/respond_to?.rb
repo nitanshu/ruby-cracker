@@ -16,11 +16,11 @@ end
 
 class Treasure
   def method_missing(name, *arg, &blk)
-    super unless name.to_s.respond_to?(:+)
+    super unless name == :hunt
     "You called this method #{name}"
   end
 
-  def respond_to_missing?(method, include_private = false)
-    "you have responed to this method #{method}"
+  def respond_to_missing?(method, *args, &block)
+    method == :hunt || super
   end
 end

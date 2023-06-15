@@ -1,4 +1,3 @@
-
 class Build
   attr_reader :name
   attr_writer :age
@@ -9,4 +8,3 @@ class Build
     @age = age
   end
 end
-

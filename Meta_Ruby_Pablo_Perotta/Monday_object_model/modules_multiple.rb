@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module M1; end
 module M2
   include M1
