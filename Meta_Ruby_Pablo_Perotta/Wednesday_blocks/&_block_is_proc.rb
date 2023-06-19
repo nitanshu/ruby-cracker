@@ -1,5 +1,5 @@
 def b(x,y, &the_proc)
-  p the_proc.class
+  p the_proc.class # Proc
   the_proc.call(x,y)
 end
 

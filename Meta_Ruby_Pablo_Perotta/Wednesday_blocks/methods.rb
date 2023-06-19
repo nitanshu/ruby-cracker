@@ -2,6 +2,7 @@ class MyClass
   def initialize(value)
     @x = value
   end
+
   def my_method
     @x
   end
@@ -9,4 +10,4 @@ end
 object = MyClass.new(1)
 m = object.method :my_method
 m.call
-object.to_proc
+object.to_proc # I don't know why

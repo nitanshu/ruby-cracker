@@ -14,3 +14,8 @@ def double_trouble
   result*2 #=> 20
 end
 
+def double2(cb)
+  cb.call *2
+end
+p= Proc.new {return 10}
+double2(p)

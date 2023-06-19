@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class Arithmetic < BasicObject
+class Arithmetic 
   DEFINED_OPERATIONS = %w[+ - * /].freeze
   def method_missing(name, *args, &block)
     p "method_name #{name}, arg are #{args}"
-    return block if block_given?
-
+    return block.call(args.first, args.last) if block_given?
+    
     args.first.send(:"#{name}", args.last)
   end
 
@@ -15,6 +15,7 @@ class Arithmetic < BasicObject
 end
 a = Arithmetic.new
 a.+(1, 2)
+a.+(3, 2){ |x, y| puts x * y }
 a.-(10, 5)
 a.*(10, 10)
 a./(10, 3)
