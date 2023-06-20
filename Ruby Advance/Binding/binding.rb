@@ -11,6 +11,3 @@ abc = A.new.method
 p eval("x", abc)
 p eval("@x", abc)
 binding.local_variables
-
-
-

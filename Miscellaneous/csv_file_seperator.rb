@@ -1,5 +1,5 @@
 require 'csv'
-headers= ['city', 'state']
+headers = %w[city state]
 csv = CSV.parse('Albany, N.Y.
 Albuquerque, N.M.
 Anchorage, Alaska
@@ -14,11 +14,11 @@ Birmingham, Ala.
 Bismarck, N.D.
 Boise, Idaho
 Boston, Mass.
-Bridgeport, Conn.',headers: headers)
-a= ''
+Bridgeport, Conn.', headers: headers)
+a = ''
 csv.each do |row|
-  a << row['city']+ ','
-  a << row['state']+ ';'
+  a << row['city'] + ','
+  a << row['state'] + ';'
 end
 
 puts a
