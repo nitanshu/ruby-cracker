@@ -1,9 +1,13 @@
 module Window
-  def hi; 'Window#hi'; end
+  def hi
+    'Window#hi'
+  end
 end
 
 module Shade
-  def hi; 'Shade#hi'; end
+  def hi
+    'Shade#hi'
+  end
 end
 
 class BBB

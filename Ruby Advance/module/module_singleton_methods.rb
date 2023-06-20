@@ -7,4 +7,8 @@ module Simpsons
   end
 end
 
+class NewAge
+  include Simpsons
+end
+
 p Simpsons.singleton_methods

@@ -3,14 +3,14 @@ module Foo
   ANIMAL = 'Python'
   class Bar
     def value1
-      p ANIMAL, " "
+      p ANIMAL, ' '
     end
   end
 end
 
 class Foo::Bar
   def value2
-    p ANIMAL, " "
+    p ANIMAL, ' '
   end
 end
 

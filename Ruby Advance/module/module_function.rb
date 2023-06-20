@@ -12,6 +12,5 @@ class A
   include Bob
 end
 
-
 p Bob.job
 p A.new.job

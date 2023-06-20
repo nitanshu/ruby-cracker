@@ -11,4 +11,3 @@ class A
     p 'instance method of class A'
   end
 end
-

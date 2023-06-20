@@ -3,6 +3,7 @@ module MordenWarFare
     def captain_america
       'has his shield'
     end
+
     def iron_man
       'has his suit'
     end
@@ -10,6 +11,7 @@ module MordenWarFare
   def self.natasha
     'she has the talent to attract any avenger'
   end
+
   def battle
     'every one is involved'
   end
@@ -22,4 +24,3 @@ class Battle
 end
 Battle.battle
 Battle.natasha
-

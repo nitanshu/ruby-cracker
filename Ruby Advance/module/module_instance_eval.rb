@@ -16,3 +16,7 @@ class Lily
   extend Simpsons
 end
 Simpsons.singleton_methods
+Simpsons.homer
+Lily.module_class_eval
+Simpsons.bart
+Lily.homer # Error
