@@ -1,14 +1,15 @@
-[[:student, "Terrance Koar"], [:course, "Web Dev"]].inject({}) do |result, element|
+[[:student, 'Terrance Koar'], [:course, 'Web Dev']].each_with_object({}) do |element, result|
   result[element.first] = element.last
-  result
 end
 #=> {:student=>"Terrance Koar", :course=>"Web Dev"}
 
-[[:student, "Terrance Koar"], [:course, "Web Dev"], [:course1, "Web Dev1"]].inject({}) do |result, element|
+[[:student, 'Terrance Koar'], [:course, 'Web Dev'], [:course1, 'Web Dev1']].each_with_object({}) do |element, result|
   result[element.first] = element.last
-  result
 end
 
 #=> {:student=>"Terrance Koar", :course=>"Web Dev", :course1=>"Web Dev1"}
 
-
+[[:student, 'Terrance Koar'], [:course, 'Web Dev']].inject({}) do |result, element| 
+  result[element.first.to_s] = element.last.upcase
+  result
+end

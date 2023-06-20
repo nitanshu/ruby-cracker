@@ -18,3 +18,5 @@ class Dog
 end
 
 Dog.singleton_class.instance_methods.include? :about
+Dog.singleton_class.singleton_methods
+Dog.singleton_class.singleton_class_singleton_method

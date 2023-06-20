@@ -6,4 +6,4 @@ class Human
     def bye; end
   end
 end
-Human.singleton_class.instance_methods
+Human.singleton_class.instance_methods(false)
