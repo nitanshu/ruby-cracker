@@ -4,16 +4,46 @@ class AccessorExample
   end
 
   def calling_protected
-    self.its_protected
+    its_protected
   end
 
   def calling_private
-    self.its_private
+    its_private
+  end
+
+  private
+
+  def its_private
+    puts 'its private'
+  end
+
+  # It will not be a private method
+  def self.its_private_class_method 
+    puts 'its private class method'
+  end
+
+  def use_of_private
+    "Hi this is private method of class #{self.class}"
+  end
+
+  protected
+
+  def its_protected
+    puts 'its protected'
+  end
+
+  # It will not be a protected method
+  def self.its_protected_class_method
+    puts 'its class protected method'
+  end
+
+  def use_of_protected
+    "Hi this is protected method of  #{self.class}"
   end
 
   class << self
-
     private
+
     def singleton_private_method
       puts 'singleton private method'
     end
@@ -23,6 +53,7 @@ class AccessorExample
     end
 
     protected
+
     def singleton_protected_method
       puts 'singleton protected method'
     end
@@ -31,43 +62,35 @@ class AccessorExample
       puts 'class singleton protected method'
     end
   end
-
-  private
-  def its_private
-    puts 'its private'
-  end
-
-  def self.its_private_class_method
-    puts 'its private class method'
-  end
-
-  protected
-  def its_protected
-    puts 'its protected'
-  end
-
-  def self.its_class_protected_method
-    puts 'its class protected method'
-  end
 end
+
 class ChildAccessorExample < AccessorExample
   def calling_parent_private_method
     its_private
     its_protected
     calling_protected
-    # calling_private #will not execute
+    calling_private
+  end
+
+  def call_private_with_self
+    use_of_private
+  end
+
+  def call_protected_with_self
+    use_of_protected
   end
 end
 
 a = AccessorExample.new
 a.its_public
+a.calling_private
+a.calling_protected
 a.send(:its_private)
 a.send(:its_protected)
 a.method(:its_private).call
 a.method(:its_protected).call
-a.calling_protected
-a.calling_private
-a.send(:calling_protected)
-a.send(:calling_private)
-ChildAccessorExample.new.calling_parent_private_method
+c = ChildAccessorExample.new
+c.calling_parent_private_method
+
 AccessorExample.singleton_private_method
+AccessorExample.singleton_class.class_singleton_private_method

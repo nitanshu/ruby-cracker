@@ -1,5 +1,4 @@
 class SingletonExample
-
   class << self
     def singleton_method1
       p 'singleton_method1'
@@ -10,7 +9,7 @@ class SingletonExample
     p 'singleton_method2'
   end
 
-  def SingletonExample.singleton_method3
+  def self.singleton_method3
     p 'singleton_method3'
   end
 end
@@ -24,7 +23,7 @@ class Watersport
 end
 Watersport.singleton_methods # => [:surf]
 
-s= SingletonExample.new
+s = SingletonExample.new
 
 def s.singleton_method4
   p 'singleton_method4'
@@ -33,12 +32,9 @@ end
 s.instance_eval do
   def singleton_method5
     p 'singleton_method5'
-
   end
 end
 
 s.define_singleton_method(:singleton_method6) do
-  def singleton_method6
-    p 'singleton_method6'
-  end
+  p 'singleton_method6'
 end

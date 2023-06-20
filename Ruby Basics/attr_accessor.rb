@@ -1,20 +1,17 @@
 class Casonova
-def name
-@name
+  def name
+    @name
+  end
+
+  def age
+    @age
+  end
+
+  def name=(name)
+    @name=name
+  end
+
+  def age=age
+    @age=age
+  end
 end
-
-def age
-@age
-end
-
-def name=(name)
-@name=name
-end
-
-def age=age
-@age=age
-end
-
-
-end
-

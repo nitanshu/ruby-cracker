@@ -1,6 +1,6 @@
 class Fido
   def angry
-    self.sound * 3
+    sound * 3
   end
 
   protected

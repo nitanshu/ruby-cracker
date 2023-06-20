@@ -4,6 +4,7 @@ class A
   end
 
   private
+
   def method1
     puts "hello from #{self.class}"
   end
@@ -14,4 +15,3 @@ class PrivateProtectedExtended < A
     method1
   end
 end
-

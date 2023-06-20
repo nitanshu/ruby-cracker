@@ -6,4 +6,4 @@ in { error: error, code: code }
   puts "Error: #{error}, Code: #{code}"
 end
 
-#Error: Bad Gateway, Code: 502
+# Error: Bad Gateway, Code: 502

@@ -1,11 +1,10 @@
 begin
-puts "begin block"
-puts 2/0
+  puts 'begin block'
+  puts 2 / 0
 rescue Exception => e
-retry
-sleep 5
+  retry
 else
-puts "i am in else part"
+  puts 'i am in else part'
 ensure
-puts "ensure part is called"
+  puts 'ensure part is called'
 end

@@ -1,10 +1,10 @@
 begin
-puts 2/0
-rescue
+  puts 2 / 0
+rescue StandardError
   puts $!
-puts "retry block"
+  puts 'retry block'
 else
-puts "i am in else part"
+  puts 'i am in else part'
 ensure
-puts "ensure part is called"
+  puts 'ensure part is called'
 end
