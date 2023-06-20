@@ -5,9 +5,11 @@ class A
         puts 'a'
       end
     end
+
     define_method('nitanshu') do
-      puts "nitanshu verma"
+      puts 'nitanshu verma'
     end
+
     class_eval do
       def b
         puts 'b'
@@ -19,3 +21,6 @@ class A
   end
 end
 
+A.singleton_class.a
+A.singleton_class.methods(false)
+A.singleton_methods

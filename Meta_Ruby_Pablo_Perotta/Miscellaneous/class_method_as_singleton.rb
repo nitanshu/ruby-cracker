@@ -7,3 +7,4 @@ class A
 end
 
 A.singleton_methods
+# Class methods are always singleton methods

@@ -14,10 +14,7 @@ reporters:
 formatter:
   rubocop:
     cops: safe
-    
-    except: [
-      Style/FrozenStringLiteralComment: Enabled: false
-    ]
+    except: []
     only: []
     extra_args: []
 require_paths: []

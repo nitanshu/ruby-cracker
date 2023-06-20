@@ -7,6 +7,7 @@ module M
       end
     end
   end
+
   def self.extended(base)
     p "base extended is #{base}"
     base.instance_eval do
@@ -22,16 +23,15 @@ module M
 end
 
 class A
-include M
+  include M
   def he
     p self
   end
 end
 
-a=A.new
+a = A.new
 a.test # test
 a.test_method # 'test method in module M'
-
 
 class B
   extend M
@@ -39,6 +39,6 @@ class B
     'test method in B'
   end
 end
-b= B.new
+b = B.new
 b.test_method
 B.base_class_method

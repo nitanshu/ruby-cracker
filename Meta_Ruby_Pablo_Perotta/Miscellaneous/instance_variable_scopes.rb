@@ -10,5 +10,5 @@ Sublime.instance_variables
 s = Sublime.new
 s.sing(h)
 p s.instance_variables
-p "***"
+p '***'
 p h.instance_variables
