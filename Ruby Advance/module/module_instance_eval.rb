@@ -1,9 +1,13 @@
 module Simpsons
-  def homer; end
+  def homer
+    'homer'
+  end
   module_function :homer
 
   instance_eval do
-    def bart; end
+    def bart
+      'bart'
+    end
   end
   class_eval do
     def module_class_eval

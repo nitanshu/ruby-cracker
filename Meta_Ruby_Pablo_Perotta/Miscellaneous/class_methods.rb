@@ -6,7 +6,15 @@ class ClassMethods
   def self.elsething
     something
   end
+  class << self
+    def nothing
+      elsething
+    end
 
+    def itthing
+      check_override
+    end
+  end
   def check_override
     'checking override up'
   end

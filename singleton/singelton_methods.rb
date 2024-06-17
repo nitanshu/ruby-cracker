@@ -5,10 +5,38 @@ class Dog
   def self.name
     'JIM'
   end
+  instance_eval do 
+    def how
+      'how'
+    end
+
+    def self.know
+      'know'
+    end
+    class << self 
+      def dont_know
+        'dont_know'
+      end
+
+      def self.how_do_you_know
+        'how_do_you_know'
+      end
+      class_eval do 
+        def you_will_not_get_this
+          'you_will_not_get_this'
+        end
+
+        def self.def_not
+          'def_not'
+        end
+      end
+    end
+  end
   class << self
     def singleton_class_instance_method
       'singleton_class_instance_method'
     end
+
     class << self
       def singleton_class_singleton_method
         'singleton_class_singleton_method'
@@ -20,3 +48,5 @@ end
 Dog.singleton_class.instance_methods.include? :about
 Dog.singleton_class.singleton_methods
 Dog.singleton_class.singleton_class_singleton_method
+#Singleton class instance methods are class methods for its Object class 
+# but Singleton class class methods are only accessible by singelton class 

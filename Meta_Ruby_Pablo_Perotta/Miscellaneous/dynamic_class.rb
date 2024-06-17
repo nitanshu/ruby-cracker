@@ -1,4 +1,10 @@
 class A
+  def only_instance
+    'only instance method'
+  end
+  def self.hi
+    'this is also a singleton method because all class methods are stored in singleton class'
+  end
   class << self
     instance_eval do
       def a

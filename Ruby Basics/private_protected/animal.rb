@@ -49,7 +49,8 @@ class Lion < Animal
     Cat.new.method_1 # Here it wil fail to call private method
   end
 end
-
+a= Animal.new
+a.some_method
 Lion.new.my_roar
 Dog.new.some_breed
 Cat.new.my_method

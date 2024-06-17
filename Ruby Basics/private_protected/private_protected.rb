@@ -83,8 +83,12 @@ end
 
 a = AccessorExample.new
 a.its_public
+a.its_private
+a.its_protected
 a.calling_private
 a.calling_protected
+AccessorExample.its_private_class_method
+AccessorExample.its_protected_class_method
 a.send(:its_private)
 a.send(:its_protected)
 a.method(:its_private).call

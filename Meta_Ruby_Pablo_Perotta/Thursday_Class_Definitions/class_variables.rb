@@ -23,3 +23,10 @@ class ClassVariableExample
     @@terra
   end
 end
+
+class Mille
+  @@terra= 4
+  def te
+    @@terra
+  end
+end

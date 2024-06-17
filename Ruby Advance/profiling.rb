@@ -13,6 +13,6 @@ end
 end
 
 Calculator.count_to_large_number
-Profiler__::start_profile
+Profiler_::start_profile
 Calculator.count_to_small_number
-Profiler__::stop_profile
+Profiler::stop_profile

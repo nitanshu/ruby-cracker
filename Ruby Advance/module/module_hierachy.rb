@@ -10,6 +10,11 @@ end
 
 class A
   extend M
+
+  def a
+    'a of instance'
+  end
+  
   def b
     p 'a up'
   end

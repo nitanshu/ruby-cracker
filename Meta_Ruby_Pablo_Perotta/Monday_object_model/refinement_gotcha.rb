@@ -18,4 +18,3 @@ p MyClass.new.my_method # => "refined my_method()"
 
 p MyClass.new.another_method # => "original my_method()"
 
-# this code will not work in irb as using is only allowed at top

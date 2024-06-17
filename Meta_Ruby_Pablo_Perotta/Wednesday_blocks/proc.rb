@@ -1,5 +1,5 @@
 def passing_proc(x)
-  yield(x)
+  x + yield(x)
 end
 
 p= Proc.new {|x| x*x}
@@ -22,5 +22,4 @@ def i
   u=2
   p=proc{u}
   p.call
-
 end

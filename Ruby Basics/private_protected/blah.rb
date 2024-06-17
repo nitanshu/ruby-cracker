@@ -39,5 +39,5 @@ class NewFoo < Foo
   end
 end
 
-NewFoo.new.main_method # Error
+NewFoo.new.main_method 
 NewFoo.new.call_protected_method

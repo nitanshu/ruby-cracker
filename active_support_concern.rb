@@ -4,12 +4,17 @@ module M
   def self.included(base)
     base.extend ClassMethods
     base.class_eval do
-      scope :disabled, -> {where(disabled: true)}
+      def instance_method
+        'istan'
+      end
     end
   end
 
   module ClassMethods
     puts 'class method'
+    def a_method
+      'a method'
+    end
   end
 end
 
@@ -20,7 +25,7 @@ module M
   extend ActiveSupport::Concern
 
   included do
-    scope :disabled, -> {where(disabled: true)}
+    # scope :disabled, -> {where(disabled: true)}
   end
 
   class_methods do

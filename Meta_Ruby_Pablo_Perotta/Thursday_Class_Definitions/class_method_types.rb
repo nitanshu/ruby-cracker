@@ -7,3 +7,11 @@ class MyClass
     def yet_another_class_method; end
   end
 end
+
+class MyClass
+  instance_eval do 
+    def another_way_to_write_class_method
+      'another_way_to_write_class_method'
+    end
+  end
+end

@@ -6,13 +6,14 @@ class Arithmetic
     p "method_name #{name}, arg are #{args}"
     return block.call(args.first, args.last) if block_given?
     
-    args.first.send(:"#{name}", args.last)
+    args.first.__send__(:"#{name}", args.last)
   end
 
   def respond_to_missing?(method, include_private = false)
     DEFINED_OPERATIONS.include?(method) || super
   end
 end
+
 a = Arithmetic.new
 a.+(1, 2)
 a.+(3, 2){ |x, y| puts x * y }

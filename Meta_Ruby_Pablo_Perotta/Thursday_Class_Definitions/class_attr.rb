@@ -20,3 +20,12 @@ end
 MyClass3.c = 'It works!'
 MyClass3.c
 # => "It works!"
+
+def MyClass.c=(value) @c = value
+end
+def MyClass.c @c
+end
+
+MyClass3.c = 'It works!'
+MyClass3.c
+# => "It works!"

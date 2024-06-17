@@ -5,6 +5,15 @@ module Simpsons
   instance_eval do
     def bart; end
   end
+  
+  def self.hi
+    'hi'
+  end
+  class << self
+    def hello
+      'hello'
+    end
+  end
 end
 
 class NewAge

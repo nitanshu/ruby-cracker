@@ -20,4 +20,9 @@ class Order
     method_name.to_s.start_with?('user_') || super
   end
 end
-'https://thoughtbot.com/blog/always-define-respond-to-missing-when-overriding'
+
+# 'https://thoughtbot.com/blog/always-define-respond-to-missing-when-overriding'
+
+order = Order.new
+order.user_name
+

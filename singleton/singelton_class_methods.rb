@@ -1,7 +1,9 @@
 class SingletonClassMethod
   class << self
-    def test_1
-      puts 'test 1'
+    instance_eval do 
+      def test_1
+        puts 'test 1'
+      end  
     end
 
     def test_2

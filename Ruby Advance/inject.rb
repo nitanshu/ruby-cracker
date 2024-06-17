@@ -10,6 +10,8 @@
 #=>|9, 10| 9 + 10 =>19
 #=> 19
 
+(0...10).inject(:+) #=> 45
+
 [10, 20, 30, 5, 7, 9, 3].each_with_object([]) do |element, result|
   result << element.to_s if element > 9
 end

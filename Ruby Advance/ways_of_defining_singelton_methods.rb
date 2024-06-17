@@ -9,7 +9,7 @@ class SingletonExample
     p 'singleton_method2'
   end
 
-  def self.singleton_method3
+  def SingletonExample.singleton_method3
     p 'singleton_method3'
   end
 end

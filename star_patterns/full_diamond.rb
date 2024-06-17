@@ -9,6 +9,8 @@
 #    ***
 #     *
 
-1.upto(9) do |d|
-
+9.downto(1) do |d|
+  1.upto 9 do |e|
+    p "*"*d if d/2 == e
+  end
 end

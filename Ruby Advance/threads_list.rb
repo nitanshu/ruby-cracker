@@ -1,6 +1,5 @@
 threads = []
-10.times do 
-  
+10.times do  
  thread = Thread.new do
    puts "Thread is running "
  end

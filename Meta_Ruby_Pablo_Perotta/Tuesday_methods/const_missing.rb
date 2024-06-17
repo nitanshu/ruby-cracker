@@ -23,6 +23,9 @@ module Selection
   end
 end
 
+Selection::One
+Selection::Two
+
 class ConstTerra
   def self.const_missing(const_name)
     p "Sorry, you don't have #{const_name} constant"
