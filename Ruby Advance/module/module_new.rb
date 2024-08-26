@@ -7,3 +7,5 @@ end
 class D
   extend MeganFox
 end
+
+D.figure

@@ -7,6 +7,6 @@ end
 obj = MyClass.new
 obj.class # MyClass
 obj.instance_variables # []
-obj.methods
+obj.methods #[:my_method]
 obj.my_method
 obj.instance_variables # [@v]

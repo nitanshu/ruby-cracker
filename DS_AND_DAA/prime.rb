@@ -16,3 +16,5 @@ while i <= n
 end
 prime = a - np
 puts prime.join(' ')
+
+

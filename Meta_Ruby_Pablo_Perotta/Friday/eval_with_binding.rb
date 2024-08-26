@@ -7,4 +7,4 @@ class MyClass
 end
 
 b = MyClass.new.my_method
-eval @x, b
+eval "#{@x, b}"

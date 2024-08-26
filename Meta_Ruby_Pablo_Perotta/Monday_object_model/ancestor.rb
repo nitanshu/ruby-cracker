@@ -14,3 +14,6 @@ class Ancestors
     'hila ke rakh do'
   end
 end
+
+a=Ancestors.new
+a.ancestors

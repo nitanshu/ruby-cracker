@@ -9,11 +9,12 @@ class Dog
     def how
       'how'
     end
-
+    puts  "======== inside instance_eval self is #{self}"
     def self.know
       'know'
     end
     class << self 
+      puts  "========inside instance_eval -> class << self is #{self}"
       def dont_know
         'dont_know'
       end
@@ -22,6 +23,7 @@ class Dog
         'how_do_you_know'
       end
       class_eval do 
+        puts  "========inside instance_eval -> class << self -> class_eval self is #{self}"
         def you_will_not_get_this
           'you_will_not_get_this'
         end

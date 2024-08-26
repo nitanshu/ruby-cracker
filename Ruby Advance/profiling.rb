@@ -1,4 +1,4 @@
-require 'profiler'
+require 'profile'
 class Calculator
 def self.count_to_large_number
 x = 0
@@ -15,4 +15,7 @@ end
 Calculator.count_to_large_number
 Profiler_::start_profile
 Calculator.count_to_small_number
-Profiler::stop_profile
+Profiler_::stop_profile
+
+
+# run this program as `ruby -rprofile profiling.rb`

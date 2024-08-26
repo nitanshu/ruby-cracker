@@ -4,7 +4,7 @@ class MyClass # SCOPE GATE: entering class
   local_variables # => ["v2"]
   def my_method # SCOPE GATE: entering def
     v3 = 3
-    local_variables
+    local_variables # => ["v3"]
   end # SCOPE GATE: leaving def
   local_variables # => ["v2"]
 end # SCOPE GATE: leaving class

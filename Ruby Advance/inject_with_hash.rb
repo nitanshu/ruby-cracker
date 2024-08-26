@@ -10,6 +10,8 @@ end
 #=> {:student=>"Terrance Koar", :course=>"Web Dev", :course1=>"Web Dev1"}
 
 [[:student, 'Terrance Koar'], [:course, 'Web Dev']].inject({}) do |result, element| 
+  p "result   #{result}" 
+  p "element  #{element}"
   result[element.first.to_s] = element.last.upcase
   result
 end

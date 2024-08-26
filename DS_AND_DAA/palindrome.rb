@@ -9,13 +9,18 @@ while j <= c.length / 2
 end
 puts c.join('') == s ? 'YES' : 'NO'
 
-a = 'abcba'.chars
+a = 'abccba'.chars
 i = 0
 j = a.length - 1
 while i < j
-  unless a[i] == a[j]
+  if a[i] != a[j]
     puts 'Not a palindorme'
     break
+  else
+    d  = j - i
+    if a.length.odd? && d == 2 || a.length.even? && d == 1
+      puts 'palindrome'
+    end
   end
   i += 1
   j -= 1

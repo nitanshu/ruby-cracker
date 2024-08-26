@@ -11,17 +11,17 @@ proc.call(1,2,3)               # prints out 1 and forgets about the extra argume
 
 
 def lambda_test
-  lam = lambda { return }
+  lam = lambda { return 10}
   lam.call
   puts "Hello world"
 end
 
-lambda_test                 # calling lambda_test prints 'Hello World'
+lambda_test # calling lambda_test prints 'Hello World'
 # ‘return’ inside of a lambda triggers the code right outside of the lambda code
 
 
 def proc_test
-  proc = Proc.new { return }
+  proc = Proc.new { return 10}
   proc.call
   puts "Hello world"
 end

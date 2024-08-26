@@ -17,6 +17,21 @@ class MethodArgument
   end
 end
 
+MethodArgument.new.test_3(1, validate: false)
+
+def a_method(n1, n2)
+  n1+ n2
+end
+def hi(needed, needed2,
+  maybe1 = "42", maybe2 = maybe1.upcase,
+  *args,
+  named1: 'hello', named2:,
+  **options,
+  &block)
+end
+
+hi(2,3, named2: 3)
+
 test_1(2, 3)
 
 test_2(1, 3)

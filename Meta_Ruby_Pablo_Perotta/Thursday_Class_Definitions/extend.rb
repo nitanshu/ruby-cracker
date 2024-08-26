@@ -6,6 +6,11 @@ module MyModule
     'my class method'
   end
 end
+
+class A
+  prepend MyModule
+end
+
 obj1 = Object.new
 obj2 = Object.new
 obj1.extend MyModule

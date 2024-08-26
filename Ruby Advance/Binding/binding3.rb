@@ -2,11 +2,11 @@ class Binding3
   x = 14
   y = 10
   @z = 5
-  binding
   def hi
-    x = 14
+    x = 10
     binding
   end
+  binding
 end
 b = Binding3.new
 eval('x', b, __FILE__, __LINE__)

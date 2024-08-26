@@ -46,7 +46,7 @@ end
 module Meta
   def self.included(base)
     puts "#{self}----#{base}"
-    base.extend(A)
+    base.extend(Alien)
   end
 
   def method_in_meta

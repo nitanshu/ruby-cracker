@@ -10,4 +10,5 @@ end
 object = MyClass.new(1)
 m = object.method :my_method
 m.call
-object.to_proc # I don't know why
+m.to_proc.call
+object.to_proc  # Undefined method

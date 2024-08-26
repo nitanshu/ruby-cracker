@@ -10,6 +10,7 @@ end
 class A
 
 end
+a_method(A)
 
 A.instance_eval do
   def _class_method_

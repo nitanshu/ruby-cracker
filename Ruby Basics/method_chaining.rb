@@ -1,4 +1,4 @@
-class MethodChaining
+class MethodChaining1
   def hi
     p 'hi'
   end
@@ -7,4 +7,4 @@ class MethodChaining
     p 'below hi'
   end
 end
-MethodChaining.hi
+MethodChaining1.new.hi

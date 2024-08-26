@@ -11,5 +11,4 @@ end
 
 obj = MyClass.new
 obj.my_method
-obj.my_method
 local_variables

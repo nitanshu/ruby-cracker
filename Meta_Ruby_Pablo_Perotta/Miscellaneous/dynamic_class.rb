@@ -10,6 +10,10 @@ class A
       def a
         puts 'a'
       end
+
+      def self.aa
+        puts "aa"
+      end
     end
 
     define_method('nitanshu') do
@@ -19,6 +23,9 @@ class A
     class_eval do
       def b
         puts 'b'
+      end
+      def self.bb
+        puts 'bb'
       end
       define_method('test') do |param|
         puts "param is #{param}"

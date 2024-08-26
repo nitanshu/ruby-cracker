@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Arithmetic 
-  DEFINED_OPERATIONS = %w[+ - * /].freeze
+  DEFINED_OPERATIONS = %w[+ - * / test].freeze
   def method_missing(name, *args, &block)
     p "method_name #{name}, arg are #{args}"
     return block.call(args.first, args.last) if block_given?

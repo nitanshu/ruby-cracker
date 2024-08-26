@@ -20,7 +20,7 @@ class A
   end
   class_eval do
     def instance_method
-      'this method is instance method of class A'
+      'this method is instance method'
     end
   end
 end

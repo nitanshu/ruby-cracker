@@ -1,5 +1,5 @@
-module A
-  module B
+module D
+  module E
     class C
       include A::B
       def aloha

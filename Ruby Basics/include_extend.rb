@@ -12,6 +12,7 @@ class Bar
   # include Foo
 end
 
+Foo.module_level_method
 Bar.module_level_method # Error
 Bar.new.test # Error
 Bar.test # hell

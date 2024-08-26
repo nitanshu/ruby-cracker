@@ -19,7 +19,7 @@ class CFactorial
   end
 end
 
-class Fixnum
+class Integer
   def factorial
     (1..self).inject { |a, b| a * b }
   end

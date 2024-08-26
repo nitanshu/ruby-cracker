@@ -1,5 +1,5 @@
 def fibonacci(n)
-  n == 0 || n ==1 ? puts n : print fibonacci(n-2) + fibonacci(n-1)
+  n == 0 || n == 1 ?  n : print fibonacci(n-2) + fibonacci(n-1)
 end
 
 

@@ -3,7 +3,11 @@ module MordenWarFare
     def captain_america
       'has his shield'
     end
-
+    instance_eval do 
+      def s_u
+        'su'
+      end
+    end
     def iron_man
       'has his suit'
     end
