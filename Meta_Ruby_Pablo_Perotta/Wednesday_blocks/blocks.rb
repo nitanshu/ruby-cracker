@@ -9,3 +9,4 @@ def b_method(a, b)
 end
 
 b_method(1, 2) # nil
+b_method(3, 2) {|c| p c*c} # nil

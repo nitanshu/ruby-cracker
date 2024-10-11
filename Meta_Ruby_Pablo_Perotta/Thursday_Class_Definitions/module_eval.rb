@@ -8,4 +8,4 @@ end
 b=B.new
 b.hello
 
-#module_eval is similar to instance_eval
+#module_eval is similar to class_eval

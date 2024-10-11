@@ -14,6 +14,7 @@ puts "Proc result: #{my_proc.call}" #LocalJumpError
 def call_proc
   puts "Before proc"
   my_proc = Proc.new { return 2 }
+  puts "after block creation proc"
   my_proc.call
   puts "After proc"
 end

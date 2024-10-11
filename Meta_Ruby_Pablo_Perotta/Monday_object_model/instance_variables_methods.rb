@@ -10,3 +10,4 @@ obj.instance_variables # []
 obj.methods #[:my_method]
 obj.my_method
 obj.instance_variables # [@v]
+MyClass.instance_variables

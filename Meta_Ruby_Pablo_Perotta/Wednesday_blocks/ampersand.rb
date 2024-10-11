@@ -11,6 +11,10 @@ end
 def math(a, b)
   yield(a, b)
 end
+#or 
+def math(a, b, &block)
+  block.call(a,b)
+end
 
 my_math(1, 2) { |x, y| x * y }
 

@@ -1,4 +1,5 @@
 module Kernel
+  private
   def nitanshu_pp
     self
   end

@@ -14,6 +14,12 @@ end
 
 a(1,2) {|x, y| x+y}
 
+def b(x,y, &blk)
+  blk.call(x,y)
+end
+
+b(1,2) {|x, y| x+y}
+
 u=1
 p = proc { u}
 p.call
