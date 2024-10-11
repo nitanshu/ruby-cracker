@@ -12,4 +12,4 @@ hobbies = {
     "Chad" => ['Puzzles', 'Pets', 'Yoga']
 }
   
-find_all_hobbyists('Yoga', hobbies) 
+find_all_hobbyists('Yoga', hobbies)
